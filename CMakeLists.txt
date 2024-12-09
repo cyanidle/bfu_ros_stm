@@ -32,7 +32,9 @@ project(bfu_ros_stm)
 message("Build type: " ${CMAKE_BUILD_TYPE})
 
 # Create an executable object type
-add_executable(bfu_ros_stm)
+add_executable(bfu_ros_stm
+    bfu/bfumain.cpp
+)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
